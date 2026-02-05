@@ -1,0 +1,20 @@
+MOV A, #09H
+INC A
+MOV B, A
+
+MUL AB
+INC A
+
+MOV B, R0
+MUL AB
+MOV R1, A
+
+MOV A, #08H
+MOV B, #0AH
+MUL AB
+MOV R2, A
+
+MOV A, R1
+ADD A, R2
+
+END
